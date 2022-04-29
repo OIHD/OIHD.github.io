@@ -1,108 +1,45 @@
-html{
-    background-image: url(SVGTASARIM.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: top;
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>OIHD - GitHub.IO</title>
+		<link rel="stylesheet" type="text/css" href="test.css">
 
-}
-
-#isim{
-    position: relative;
-    padding-top: 30px;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Montserrat', sans-serif;
-    
-    width: auto;
-    height: 70px;
-    /* border: 1px solid; */
-
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-
-}
-
-#yazi{
-    position: relative;
-    padding-top: 10px;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Montserrat', sans-serif;
-
-    width: auto;
-    height: 200px;
-    /* border: 1px solid; */
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-#yazi2{
-    position: relative;
-    padding-top: 10px;
-    padding: 20px;
-    text-align: left;
-    margin: 15px;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Montserrat', sans-serif;
-
-    width: 160px;
-    height: 250px;
-    /* border: 1px solid; */
-
-    display: block;
-    margin-left: auto;
-    float: left;
-
-}
-
-#yazi3{
-    position: relative;
-    padding-top: 10px;
-    padding: 20px;
-    text-align: right;
-    margin: 15px;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Bebas Neue', cursive;
-    font-family: 'Montserrat', sans-serif;
-
-    width: 160px;
-    height: 200px;
-    /* border: 1px solid; */
-
-
-    display: block;
-    margin-left: auto;
-
-    float: right;
-    
-
-}
-
-#kutu1{
-    position: relative;
-    background-color: bisque;
-    width: 500px;
-    height: 200px;
-    /* border: 1px solid; */
-}
-
-#kutu2{
-    font-size: 10px;
-    position: absolute;
-    background-color: darkgrey;
-    width: 150px;
-    height: 150px;
-    /*border: 1px solid;*/
-    top: 50px;
-    left: 15px;
-}
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+	</head>
+	<body>
+		<h1 id="isim">Hi there &#128075; im using GitHub</h1>
+		<div id="yazi">
+			&MediumSpace;&MediumSpace;&MediumSpace;&MediumSpace;Hi ! My name is Göktuğ /Gəʊktʃu: . I'm 22 years old and living in the TUR. Currently studying at university so i have much time for improve myself . I like drawing as a hobby. I'm studying at the university.I am an industrial design student.I have a special interest in 3D drawing&modeling. I have a special interest in game development. I did a lot of work on game engines and idea visualization. I like to code like everyone else. ^^
+			<br><br><br>
+		</div>
+		<div id="yazi2">
+			languages I use
+			<br>			
+			main : C++ , Rust
+			<br><br><br>
+			others :
+			<br>
+			Lua , C# , Python
+			<br><br><br>
+			OS
+			<br>
+			Pop-OS 22.04 amd64 nvidia LTS
+			<br><br><br>
+		</div>
+		<div id="yazi3">Social
+			<br><br>
+			my website:
+		<br>
+		<a href="http://oihd.net/">OIHD.net</a>
+		<br>
+		<br>
+		my artstation acc:
+		<br>
+		<a href="https://www.artstation.com/oihd"> OIHD's Artstation Profile</a>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<h2 id="isim">Geliştirdiğim Oyunlar</h2>
+	</body>
+</html>
