@@ -1,0 +1,108 @@
+html{
+    background-image: url(Images/SVGTASARIM.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+
+}
+
+#isim{
+    position: relative;
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Montserrat', sans-serif;
+    
+    width: auto;
+    height: 70px;
+    /* border: 1px solid; */
+
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+#yazi{
+    position: relative;
+    padding-top: 10px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Montserrat', sans-serif;
+
+    width: auto;
+    height: 200px;
+    /* border: 1px solid; */
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#yazi2{
+    position: relative;
+    padding-top: 10px;
+    padding: 20px;
+    text-align: left;
+    margin: 15px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Montserrat', sans-serif;
+
+    width: 160px;
+    height: 250px;
+    /* border: 1px solid; */
+
+    display: block;
+    margin-left: auto;
+    float: left;
+
+}
+
+#yazi3{
+    position: relative;
+    padding-top: 10px;
+    padding: 20px;
+    text-align: right;
+    margin: 15px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Montserrat', sans-serif;
+
+    width: 160px;
+    height: 200px;
+    /* border: 1px solid; */
+
+
+    display: block;
+    margin-left: auto;
+
+    float: right;
+    
+
+}
+
+#kutu1{
+    position: relative;
+    background-color: bisque;
+    width: 500px;
+    height: 200px;
+    /* border: 1px solid; */
+}
+
+#kutu2{
+    font-size: 10px;
+    position: absolute;
+    background-color: darkgrey;
+    width: 150px;
+    height: 150px;
+    /*border: 1px solid;*/
+    top: 50px;
+    left: 15px;
+}
