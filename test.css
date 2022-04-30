@@ -1,8 +1,9 @@
 html{
-    background-image: url(SVGTASARIM.svg);
-    background-repeat: repeat-x;
-    background-position: top;
-    background-attachment: fixed;
+    background: url(Images/SVGTASARIM.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #isim{
