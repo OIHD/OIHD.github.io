@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <style>
+    body {
+        margin: 0;
+		
+		#knop{position: absolute; top: 1em; left: 1em;}
+		:-moz-full-screen #knop {position: fixed;top: 2em;right: 2em;width: 300px;height: 100px;}
+		#full {width: 100%; height: 100%}
+		#contf {width: 100%;height: 500px;    position: relative;}
+		#contf:-webkit-full-screen {width: 100vw;height: 100vh}
+		#contf:-moz-full-screen {width: 100vw;height: 100vh}
+		#contf:-ms-full-screen {width: 100vw;height: 100vh}
+		#contf:full-screen {width: 100vw;height: 100vh}
+		#toggle_fullscreen{border: none;color: #000;}
+    }
+    </style>
+
+    <title>Armory</title> 
+</head>
+<body style="margin: 0; padding: 0;">
+<div id="contf">
+    <canvas style="width: 100vw; height: 100vh; display: block;" id='khanvas' tabindex='-1'></canvas>
+	<div style="    position: absolute; top: 10px; left: 10px;">
+		<button style="border: none; background: none" id="knop" onclick="toggleFullScreen()">
+			<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#707070" viewBox="0 0 24 24"><path d="M24 9h-2v-4h-4v-2h6v6zm-6 12v-2h4v-4h2v6h-6zm-18-6h2v4h4v2h-6v-6zm6-12v2h-4v4h-2v-6h6zm14 4h-16v10h16v-10z"/></svg>
+		</button>
+	</div>
+</div>
+    <script src='kha.js'></script>
+	<script>
+		  var videoElement = document.getElementById("contf");
+		  function toggleFullScreen() {
+			// ## The below if statement seems to work better ## if ((document.fullScreenElement && document.fullScreenElement !== null) || (document.msfullscreenElement && document.msfullscreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+			if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
+				if (videoElement.requestFullScreen) {
+					videoElement.requestFullScreen();
+				} else if (videoElement.mozRequestFullScreen) {
+					videoElement.mozRequestFullScreen();
+				} else if (videoElement.webkitRequestFullScreen) {
+					videoElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+				} else if (videoElement.msRequestFullscreen) {
+					videoElement.msRequestFullscreen();
+				}
+			} else {
+				if (document.cancelFullScreen) {
+					document.cancelFullScreen();
+				} else if (document.mozCancelFullScreen) {
+					document.mozCancelFullScreen();
+				} else if (document.webkitCancelFullScreen) {
+					document.webkitCancelFullScreen();
+				} else if (document.msExitFullscreen) {
+					document.msExitFullscreen();
+				}
+			}
+		}
+	</script>
+</body>
+</html>
