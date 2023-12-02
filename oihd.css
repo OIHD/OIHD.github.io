@@ -13,7 +13,7 @@ html{
     font-family: 'Anton', sans-serif;
     font-family: 'Bebas Neue', cursive;
     font-family: 'Montserrat', sans-serif;
-    
+
     width: auto;
     height: 70px;
     /* border: 1px solid; */
@@ -22,7 +22,7 @@ html{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
+
 
 }
 
@@ -89,7 +89,7 @@ html{
     margin-left: auto;
 
     float: right;
-    
+
     background-color: rgba(162, 162, 162, 0.109);
 
 
@@ -113,8 +113,6 @@ html{
     top: 50px;
     left: 15px;
 }
-
-
 
 .container{
     display: flex;
