@@ -1,0 +1,101 @@
+/*default*/
+body,form,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,fieldset,input,blockquote,th,td,select{margin:0;padding:0;font:12px dotum;color:#777;}
+table{border-collapse:collapse;border-spacing:0;}
+em,cite,address,dfn,var{font-style:normal;}
+dl,ul,ol{list-style:none;}img,fieldset{border:0;}
+button{margin:0;padding:0;overflow:hidden;cursor:pointer;border:0;}
+legend, caption{overflow:hidden;height:0;font-size:0;line-height:0;display:none;}
+a {text-decoration:none;color:#777;}a:visited {text-decoration:none;}a:hover {text-decoration:underline;}
+
+body{width:100%;text-align:center;background:#181713;}
+.hide{position:absolute;left:0;top:0;width:1px;height:1px;font-size:0;line-height:0;visibility:hidden;z-index:-1;}
+.S2Fan_body {position:relative;width:100%;}/*height:100%;*/
+
+.origin{position:relative;z-index:1;width:100%;background:url('linkk') 50% 0 no-repeat;}
+.container{position:relative;z-index:1;margin:0 auto;text-align:left;width:1000px;height:581px;zoom:1;background:url('linkk') no-repeat;}
+.container:after{content:".";display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.container .sidebar{float:left;width:292px;}
+.container .contents{float:left;width:708px;}
+.container .aside{display:none;}
+
+#divLogin {position:relative;margin-top:-10px;width:288px;height:180px;}
+#BeforeLogin{height:180px;background:url('linkk') no-repeat;}
+#BeforeLogin .s1{display:block;position:absolute;top:27px;left:123px;width:68px;height:15px;background:url('linkk') right 2px no-repeat;}
+#BeforeLogin .s1 a{color:#000;font-size:11px;letter-spacing:-1px;}
+#BeforeLogin .s1 strong{font:bold 10px verdana;color:#fff;}
+#BeforeLogin .s2{display:block;position:absolute;top:27px;left:196px;}
+#BeforeLogin .s2 a{color:#c3c3c3;font-size:11px;letter-spacing:-1px;}
+#BeforeLogin .s2 label{vertical-align:middle;}
+#BeforeLogin .s2 input{vertical-align:middle;margin:0 0 0 4px;width:13px;height:13px;background:none;}
+#BeforeLogin dl{position:absolute;top:58px;left:22px;z-index:5;}
+#BeforeLogin dt{display:none;}
+#BeforeLogin dd{height:30px;}
+#BeforeLogin .lgn{background:transparent;width:79px;height:64px;position:absolute;top:56px;left:190px;z-index:6;}
+#BeforeLogin .lgn span{display:none;}
+#BeforeLogin .link{position:absolute;top:133px;left:10px;z-index:1;height:37px;}
+#BeforeLogin .link span{float:left;}
+#BeforeLogin .link span a{display:inline-block;height:37px;}
+#BeforeLogin .link span a em{display:none;}
+#BeforeLogin .link .l1 a{width:76px;}
+#BeforeLogin .link .l2 a{width:93px;}
+#BeforeLogin .link .l3 a{width:100px;}
+#tooltip{background:url(giflinkk) 0 0 no-repeat;color:#f60;font-size:11px;text-align:center;padding-top:13px;width:167px;height:32px;position:absolute;top:46px;left:0;z-index:5;display:none;}
+#BeforeLogin dd input{width:163px;height:27px;border:0 none;border-right:0 none;background-color:#0a0d11;color:#484848;padding:7px 5px 0 5px;}
+#BeforeLogin input.bgid{background:url(giflinkkk) 10px 8px no-repeat #0a0d11;}
+#BeforeLogin input.bgpw{background:url(giflinkkk) 10px 8px no-repeat #0a0d11;}
+#BeforeLogin .uid input.bgon{background:none;background-color:#0a0d11;}
+#BeforeLogin .upw input.bgon{background:none;background-color:#0a0d11;}
+
+
+/* common */
+.fix{zoom:1;}.fix:after{content:".";display:block;font-size:0;height:0px;line-height:0;clear:both;}
+.clear{clear:both;}.fl{float:left;}.fr{float:right;}.txr{text-align:right;}.txc{text-align:center;}.txl{text-align:left;}
+.f11{font-size:11px;}.fb{font-weight:bold;}.u{text-decoration:underline;}.ls{letter-spacing:-1;}
+.ht14{line-height:14px;}.ht16{line-height:16px;}.ht17{line-height:17px;}.ht18{line-height:18px;}
+.abs img{vertical-align:middle;margin-bottom:3px;}
+.tbl th,.tbl td{padding-top:3px;}.tbl th.pd0,.tbl td.pd0{padding-top:0;}
+.it_cr{vertical-align:middle;width:13px;height:13px;margin:0 4px 3px 0;}
+.it_none{border:0 none;background:none;}
+.it_bx{}
+.ds_none{display:none;}
+
+.m_a01{height:361px;}
+.m_a01 .a_left{float:left;width:430px;}
+.m_prom{float:left;padding-top:17px;width:278px;}
+
+.mlist{position:relative;height:168px;}
+.mlist h3{display:none;}
+.mlist ul{padding-top:60px;margin-left:20px;width:380px;}
+.mlist a{color:#000;}
+.mlist li{position:relative;padding-left:10px;height:22px;background:url(giflinkkk) 0 4px no-repeat;}
+.mlist .t1{display:inline-block;width:290px;letter-spacing:-1px;}
+.mlist .t2{display:none;}
+.mlist .t3{display:inline-block;width:80px;text-align:right;color:#000;font-size:11px;}
+.mlist .act a,.mlist .act{font-weight:bold;color:#fafafa;}
+.mlist .act .t3{color:#8c0000;}
+.mlist .more span{display:none;}
+.mlist .more{position:absolute;top:20px;left:358px;width:46px;height:21px;display:block;}
+
+.m_screen{position:relative;height:200px;overflow:hidden;}
+.m_screen .rbt{position:absolute;top:0;right:0;width:59px;height:40px;background:url('bglinkk') no-repeat;}
+.m_screen .rbt .bt{position:absolute;display:block;width:21px;height:19px;}
+.m_screen .rbt .bt em{display:none;}
+.m_screen .rbt .bt_pre{top:11px;left:11px;}
+.m_screen .rbt .bt_next{top:11px;left:38px;}
+.m_screen ul{padding-top:40px;margin-left:13px;width:695px;}
+.m_screen li{position:relative;float:left;display:inline;margin-right:3px;width:171px;}
+.m_screen .n02{margin-right:2px;}
+.m_screen dt{font-size:0;line-height:0;}
+.m_screen dt em{position:absolute;top:0;right:0;width:171px;height:108px;display:block;}
+.m_screen .n01 dt em{background:url('giflinkkk') no-repeat;}
+.m_screen .n02 dt em{background:url('giflinkkk') no-repeat;}
+.m_screen .n03 dt em{background:url('giflinkkk') no-repeat;}
+.m_screen .n04 dt em{background:url('giflinkkk') no-repeat;}
+.m_screen dt a{position:absolute;top:0;left:0;width:171px;height:108px;display:block;background:url('giflinkkk');}
+.m_screen dt.ic_new a{background:url('giflinkkk') 100% 0 no-repeat;}
+.m_screen dt.ic_best a{background:url('giflinkkk') 100% 0 no-repeat;}
+.m_screen dd{padding-left:10px;}
+.m_screen .t1{padding:20px 0 1px 10px;font-weight:bold;color:#000;}
+.m_screen .t1 a{color:#000;letter-spacing:-1px;}
+.m_screen .t1 a span{letter-spacing:0;}
+.m_screen .t2{font-size:11px;color:#8c0000;}
