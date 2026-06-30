@@ -1,121 +1,456 @@
-<style>
-  .arka-plan {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    padding: 20px;
-  }
-</style>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>>> About Goktug <<</title>
-      <style>
-        body {
-          background-image: url(https://oihd.github.io/Images/SVGTASARIM.svg);
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-        header {
-          background-color: rgba(0, 0, 0, 0.5);
-          color: white;
-          padding: 10px;
-        }
-        footer {
-          background-color: rgba(0, 0, 0, 0.5);
-          color: white;
-          padding: 20px;
-        }
-      </style>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Göktuğ Yamak - Industrial Designer & Embedded Systems Specialist | Portfolio">
+    <meta name="keywords" content="Göktuğ Yamak, Industrial Design, Embedded Systems, IoT, ESP32, Arduino, Linux, Portfolio">
+    <meta name="author" content="Göktuğ Yamak">
+    <meta property="og:title" content="Göktuğ Yamak | Portfolio">
+    <meta property="og:description" content="Multidisciplinary tech specialist bridging hardware and software">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://göktuğ.com">
+    <title>Göktuğ Yamak | Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1 style="text-align: center;">Hi there 👋 </h1>
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">Göktuğ</a>
+            <div class="nav-links">
+                <a href="#about" data-en="About" data-tr="Hakkımda">About</a>
+                <a href="#experience" data-en="Experience" data-tr="Deneyim">Experience</a>
+                <a href="#projects" data-en="Projects" data-tr="Projeler">Projects</a>
+                <a href="#skills" data-en="Skills" data-tr="Yetkinlikler">Skills</a>
+                <a href="#certificates" data-en="Certificates" data-tr="Sertifikalar">Certificates</a>
+                <a href="#education" data-en="Education" data-tr="Eğitim">Education</a>
+                <a href="#contact" data-en="Contact" data-tr="İletişim">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                    <span id="langLabel">TR</span>
+                </button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
     </nav>
-  </header>
-  <main class="container">
-    <section id="">
-      <h2 class="text-center my-5"></h2>
-      <figure class=" rounded-circle m-2 text-center">
-        <img src="https://raw.githubusercontent.com/OIHD/OIHD.github.io/main/Images/goktug.jpeg"
-          class="img-thumbnail rounded-circle w-32" style="width:200px">
-      </figure>
-        <div class="text-center my-5 text-center">
-          <a href="https://tr.linkedin.com/in/goktug-yamak">
-            <img src="https://raw.githubusercontent.com/OIHD/OIHD.github.io/main/Images/linkedin.png" alt="Linkedin Avatar" width="19" height="16" class="mr-2">
-          <span>Göktuğ on Linkedin</span>
-        </a>
-      </div>
-      <h2 class="text-center my-5">About Me</h2>
-      <p class="text-center">
-        Hello, my name is Göktuğ.I live in Istanbul. I am interested in Linux, game development, 3D art and software
-        development. Below I have listed some of the areas and technologies I have worked with ..
-      </p>
-    </section>
-    <section id="GameDev">
-      <div class="arka-plan row justify-content-center my-5">
-        <div class="col-md-4 text-center">
-          <figure class=" rounded-circle m-2 text-center">
-            <img src="https://raw.githubusercontent.com/OIHD/OIHD.github.io/main/Images/ebike-oihd200.png"
-              class="rounded-circle w-32"style="width:180px">
-          </figure>
-          <h3>Design</h3>
-          <p>Conceptual design of mechanical products</p>
-          <p>Design for manufacturability</p>
-          <p>Iterative design process</p>
-          <p>Rapid prototyping</p>
-          <p>Print and digital graphics</p>
-          <p>Icon design</p>
-          <p>CAD modeling of industrial equipment</p>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mobile-link" data-en="About" data-tr="Hakkımda">About</a>
+        <a href="#experience" class="mobile-link" data-en="Experience" data-tr="Deneyim">Experience</a>
+        <a href="#projects" class="mobile-link" data-en="Projects" data-tr="Projeler">Projects</a>
+        <a href="#skills" class="mobile-link" data-en="Skills" data-tr="Yetkinlikler">Skills</a>
+        <a href="#certificates" class="mobile-link" data-en="Certificates" data-tr="Sertifikalar">Certificates</a>
+        <a href="#education" class="mobile-link" data-en="Education" data-tr="Eğitim">Education</a>
+        <a href="#contact" class="mobile-link" data-en="Contact" data-tr="İletişim">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting" data-en="Hello, I'm" data-tr="Merhaba, ben">Hello, I'm</p>
+                <h1 class="hero-name">Göktuğ <span class="highlight">Yamak</span></h1>
+                <div class="hero-typing-wrapper">
+                    <span class="hero-typing-text"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-subtitle" data-en="Multidisciplinary tech specialist bridging the gap between hardware and software. Industrial Design background combined with Linux systems, embedded IoT, and network engineering." data-tr="Endüstriyel Tasarım altyapısını ileri düzey Linux sistemleri, ağ yönetimi ve gömülü sistemler (IoT) yetkinlikleriyle birleştiren, donanım ve yazılımın kesişiminde uzmanlaşmış bir teknoloji uzmanı.">Multidisciplinary tech specialist bridging the gap between hardware and software. Industrial Design background combined with Linux systems, embedded IoT, and network engineering.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary" data-en="Get in Touch" data-tr="İletişime Geç">Get in Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-avatar-wrapper">
+                    <div class="hero-avatar-ring"></div>
+                    <div class="hero-avatar-inner">
+                        <img src="cv/photo.jpg" alt="Göktuğ Yamak" class="hero-photo">
+                    </div>
+                </div>
+                <div class="hero-floating-badges">
+                    <div class="floating-badge badge-1">⚡ IoT</div>
+                    <div class="floating-badge badge-2">🐧 Linux</div>
+                    <div class="floating-badge badge-3">🤖 <span data-en="Robotics" data-tr="Robotik">Robotics</span></div>
+                    <div class="floating-badge badge-4">🔧 ESP32</div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 text-center">
-          <figure class=" rounded-circle m-2 text-center">
-            <img src="https://raw.githubusercontent.com/OIHD/OIHD.github.io/main/Images/tux.png"
-              class="rounded-circle w-32"style="width:180px">
-          </figure>
-          <h3>Development</h3>
-          <p>C#, C++, Python programming languages</p>
-          <p>Version control with Git</p>
-          <p>Containerization with Docker</p>
-          <p>3D modeling and animation software - Blender, Substance Painter , Krita</p>
-          <p>Game engines - Unity, Unreal Engine</p>
-          <p> Linux User account management
-          <p>
-          <p>Common Linux commands</p>
-          <p>Virtualization with VirtualBox/VMWare</p>
-          <p>Compiling from source Using Linux tools (gcc, make etc.)</p>
+        <div class="scroll-indicator">
+            <span data-en="Scroll" data-tr="Kaydır">Scroll</span>
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
         </div>
-        <div class="col-md-4 text-center">
-          <figure class=" rounded-circle m-2 text-center">
-            <img src="https://raw.githubusercontent.com/OIHD/OIHD.github.io/main/Images/cadgif.gif"
-              class="rounded-circle w-32"style="width:180px">
-          </figure>
-          <h3>Industry</h3>
-          <p>AutoCAD , Solidworks and smilar softwares like Freecad</p>
-          <p>2D and 3D Technical Drawing</p>
-          <p>Design of mechanical parts and systems</p>
-          <p>Drawing of structural elements</p>
-          <p>Industrial designs</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span>
+                <span data-en="About Me" data-tr="Hakkımda">About Me</span>
+                <div class="section-line"></div>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-en="I'm a <strong>multidisciplinary tech specialist</strong> with a unique blend of <span class='text-highlight'>Industrial Design</span> and <span class='text-highlight'>advanced Linux systems</span> expertise. My journey spans from corporate NOC engineering — where I monitored 500+ enterprise network infrastructures and deployed Linux servers — to hands-on embedded IoT development with ESP32 and Arduino prototyping." data-tr="<span class='text-highlight'>Endüstriyel Tasarım</span> altyapısını <span class='text-highlight'>ileri düzey Linux sistemleri</span>, ağ yönetimi ve gömülü sistemler (IoT) yetkinlikleriyle birleştiren, donanım ve yazılımın kesişiminde uzmanlaşmış bir <strong>teknoloji uzmanıyım</strong>. Kurumsal NOC ortamındaki altyapı izleme deneyimimi; C++, Arduino/ESP32 ile prototipleme ve FreeCAD ile 3D mekanik tasarım becerilerimle harmanlayarak robotik ve otomasyon alanında katma değer sağlamayı hedefliyorum.">I'm a <strong>multidisciplinary tech specialist</strong> with a unique blend of <span class="text-highlight">Industrial Design</span> and <span class="text-highlight">advanced Linux systems</span> expertise. My journey spans from corporate NOC engineering — where I monitored 500+ enterprise network infrastructures and deployed Linux servers — to hands-on embedded IoT development with ESP32 and Arduino prototyping.</p>
+                    <p data-en="I design and build complete solutions: from 3D-modeled enclosures in FreeCAD to the embedded C++ software running inside. I'm passionate about robotics, automation systems, and leveraging my systems administration background to create robust, production-ready prototypes." data-tr="Karmaşık sistem mimarilerini çözebilen, siber güvenlik bilincine sahip ve multidisipliner projelerde fark yaratacak kararlı bir ekip üyesiyim. Geliştirdiğim prototiplerle donanım-yazılım entegrasyonunda somut çıktılar üretiyorum.">I design and build complete solutions: from 3D-modeled enclosures in FreeCAD to the embedded C++ software running inside. I'm passionate about robotics, automation systems, and leveraging my systems administration background to create robust, production-ready prototypes.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label" data-en="Networks Monitored" data-tr="Ağ İzlenen">Networks Monitored</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label" data-en="Servers Deployed" data-tr="Linux Sunucu">Servers Deployed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label" data-en="Certifications" data-tr="Sertifika">Certifications</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">EN/TR</span>
+                            <span class="stat-label" data-en="Bilingual" data-tr="İki Dilli">Bilingual</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-image-frame">
+                        <img src="cv/photo.jpg" alt="Göktuğ Yamak" class="about-photo">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-    <section id="contact">
-      <h2 class="text-center my-5"></h2>
-      <p class="text-center">
-        I enjoy taking on challenging projects that allow me to grow my skills across the stack. My goal is to build
-        well-designed, high quality and user-focused applications. Please feel free to contact me if you have any
-        opportunities that match with my experience. I am always interested in learning new technologies as well.
-      </p>
-      <h2 class="text-center my-5"></h2>
-      <h2 class="text-center my-5"></h2>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span>
+                <span data-en="Experience" data-tr="Deneyim">Experience</span>
+                <div class="section-line"></div>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 data-en="NOC Engineer" data-tr="NOC Mühendisi">NOC Engineer</h3>
+                            <span class="timeline-company">Teletek Bulut Bilişim</span>
+                            <span class="timeline-date">May 2025 – Sep 2025</span>
+                            <span class="timeline-location" data-en="Istanbul, Turkiye" data-tr="İstanbul, Türkiye">Istanbul, Turkiye</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>
+                                <strong data-en="24/7 Infrastructure Monitoring:" data-tr="7/24 Altyapı İzleme ve Olay Müdahalesi:">24/7 Infrastructure Monitoring:</strong>
+                                <span data-en="Monitored 500+ enterprise network infrastructures, performing log analysis and managing incident response to ensure <span class='text-highlight'>99.9% service availability</span>." data-tr="<span class='text-highlight'>%99.9 servis kullanılabilirliği</span> sağlamak amacıyla, 500'den fazla kurumsal ağ altyapısını 7/24 izledim, log analizleri gerçekleştirdim ve olay müdahalelerini (incident response) yönettim.">Monitored 500+ enterprise network infrastructures, performing log analysis and managing incident response to ensure <span class="text-highlight">99.9% service availability</span>.</span>
+                            </li>
+                            <li>
+                                <strong data-en="Linux Server Deployment:" data-tr="Linux Sunucu Kurulum ve Yayınlama:">Linux Server Deployment:</strong>
+                                <span data-en="Deployed 20+ Linux servers through complete installation, formatting, and configuration to accelerate system deployment speed." data-tr="Sistem kurulum ve yaygınlaştırma hızını artırmak için 20'den fazla Linux sunucusunun tam kurulum, formatlama ve konfigürasyon işlemlerini tamamlayarak yayına aldım.">Deployed 20+ Linux servers through complete installation, formatting, and configuration to accelerate system deployment speed.</span>
+                            </li>
+                            <li>
+                                <strong data-en="Automation & Scripting:" data-tr="Otomasyon ve Betikleme:">Automation & Scripting:</strong>
+                                <span data-en="Automated critical alert tracking by utilizing Shell Scripting and monitoring tools, successfully reducing system downtime and resolution times." data-tr="Shell Scripting ve izleme araçlarını (monitoring tools) kullanarak kritik uyarı takibini otomatikleştirdim; bu sayede sistem kesinti sürelerini ve sorun çözme sürelerini başarıyla azalttım.">Automated critical alert tracking by utilizing Shell Scripting and monitoring tools, successfully reducing system downtime and resolution times.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </main>
-  <footer>
-    <p class="text-center"> &copy; 2023 OIHD </p>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span>
+                <span data-en="Projects" data-tr="Projeler">Projects</span>
+                <div class="section-line"></div>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                    </div>
+                    <h3 data-en="IoT Smart Station Prototypes" data-tr="Çoklu Sensör Entegrasyonlu IoT Akıllı İstasyon Prototipleri">IoT Smart Station Prototypes</h3>
+                    <p data-en="Developed prototype systems and embedded software using <strong>ESP32</strong> and <strong>Arduino</strong> to collect, process, and transmit sensor data via Wi-Fi/Bluetooth. Multi-sensor integration with real-time data processing capabilities." data-tr="<strong>ESP32</strong> ve <strong>Arduino</strong> kullanarak sensör verilerini toplayan, işleyen ve Wi-Fi/Bluetooth üzerinden ileten donanım mimarileri ve gömülü yazılımlar geliştirdim.">Developed prototype systems and embedded software using <strong>ESP32</strong> and <strong>Arduino</strong> to collect, process, and transmit sensor data via Wi-Fi/Bluetooth. Multi-sensor integration with real-time data processing capabilities.</p>
+                    <div class="project-tech">
+                        <span>ESP32</span><span>Arduino</span><span>C++</span><span>Wi-Fi</span><span>Bluetooth</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3 data-en="Robotic Chassis & IoT Enclosures" data-tr="Robotik Gövde ve IoT Entegre Tasarımları">Robotic Chassis & IoT Enclosures</h3>
+                    <p data-en="Designed industrial-standard 3D models for robotic parts and IoT enclosures using <strong>FreeCAD</strong> and <strong>Blender</strong> for physical protection and mechanical assembly of electronic prototypes." data-tr="Geliştirilen elektronik prototiplerin fiziksel korunması ve mekanik montajı için <strong>FreeCAD</strong> ve <strong>Blender</strong> kullanarak endüstriyel standartlarda 3D gövde ve parça tasarımları gerçekleştirdim.">Designed industrial-standard 3D models for robotic parts and IoT enclosures using <strong>FreeCAD</strong> and <strong>Blender</strong> for physical protection and mechanical assembly of electronic prototypes.</p>
+                    <div class="project-tech">
+                        <span>FreeCAD</span><span>Blender</span><span data-en="3D Modeling" data-tr="3D Modelleme">3D Modeling</span><span>Prototyping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span>
+                <span data-en="Skills" data-tr="Yetkinlikler">Skills</span>
+                <div class="section-line"></div>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        <h3 data-en="Operating Systems" data-tr="İşletim Sistemleri (Operating Systems)">Operating Systems</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Linux</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+                            <span class="skill-level" data-en="Advanced" data-tr="İleri Düzey">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Windows Server</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+                            <span class="skill-level" data-en="Intermediate" data-tr="Orta">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        <h3 data-en="Programming & Scripting" data-tr="Programlama & Betik Dilleri (Programming & Scripting)">Programming & Scripting</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">C++</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+                            <span class="skill-level" data-en="Advanced" data-tr="İleri Düzey">Advanced</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C#</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+                            <span class="skill-level" data-en="Intermediate" data-tr="Orta">Intermediate</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Shell Scripting</span>
+                            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+                            <span class="skill-level" data-en="Advanced" data-tr="İleri Düzey">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        <h3 data-en="Tools & Platforms" data-tr="Araçlar & Platformlar (Tools & Platforms)">Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span>Docker</span><span>ESP32</span><span>Arduino</span><span>FreeCAD</span>
+                        <span>Blender</span><span>QCAD</span><span>VS Code</span><span>Git</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <h3 data-en="Areas of Expertise" data-tr="Uzmanlık Alanları (Areas of Expertise)">Areas of Expertise</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span data-en="Embedded Systems" data-tr="Gömülü Sistemler">Embedded Systems</span>
+                        <span data-en="Prototyping" data-tr="Prototipleme">Prototyping</span>
+                        <span data-en="Systems Admin" data-tr="Sistem Yönetimi">Systems Admin</span>
+                        <span data-en="Network Security" data-tr="Ağ Güvenliği">Network Security</span>
+                        <span data-en="IoT" data-tr="Nesnelerin İnterneti (IoT)">IoT</span>
+                        <span data-en="Robotics" data-tr="Robotik Sistemler">Robotics</span>
+                        <span data-en="3D Modeling" data-tr="3D Modelleme">3D Modeling</span>
+                        <span data-en="Basic Electronics" data-tr="Temel Elektronik">Basic Electronics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">05.</span>
+                <span data-en="Certificates" data-tr="Sertifikalar">Certificates</span>
+                <div class="section-line"></div>
+            </h2>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>MCSE</h3>
+                    <p>Microsoft Certified Solutions Expert</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🤖</div>
+                    <h3 data-en="Robotic Programming" data-tr="Arduino ile Robotik Programlama">Robotic Programming</h3>
+                    <p data-en="with Arduino (MoNE Certified)" data-tr="MEB Onaylı">with Arduino (MoNE Certified)</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">⚡</div>
+                    <h3 data-en="Basic Electronics" data-tr="Robotik Programlama için Temel Elektronik">Basic Electronics</h3>
+                    <p data-en="for Robotic Programming" data-tr="">for Robotic Programming</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🌐</div>
+                    <h3 data-en="Internet of Things" data-tr="Arduino ile Nesnelerin İnterneti (IoT)">Internet of Things</h3>
+                    <p data-en="IoT with Arduino" data-tr="">IoT with Arduino</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🔒</div>
+                    <h3 data-en="Network Security" data-tr="Ağ Güvenliğinin Temelleri">Network Security</h3>
+                    <p data-en="Fundamentals (Cybersecurity 1)" data-tr="Siber Güvenlik 1">Fundamentals (Cybersecurity 1)</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🛡️</div>
+                    <h3 data-en="Penetration Testing" data-tr="Ağ Güvenliği ve Penetrasyon Testi">Penetration Testing</h3>
+                    <p data-en="Network Security (Cybersecurity 2)" data-tr="Siber Güvenlik 2">Network Security (Cybersecurity 2)</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🇬🇧</div>
+                    <h3 data-en="Vocational English" data-tr="Bilişim için Mesleki İngilizce">Vocational English</h3>
+                    <p data-en="for IT (MoNE Certified)" data-tr="MEB Onaylı">for IT (MoNE Certified)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">06.</span>
+                <span data-en="Education" data-tr="Eğitim">Education</span>
+                <div class="section-line"></div>
+            </h2>
+            <div class="education-card">
+                <div class="edu-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>
+                </div>
+                <div class="edu-content">
+                    <h3 data-en="Bachelor's Degree in Industrial Design" data-tr="Endüstriyel Tasarım Lisans Derecesi">Bachelor's Degree in Industrial Design</h3>
+                    <span class="edu-school" data-en="Ondokuz Mayıs University" data-tr="Ondokuz Mayıs Üniversitesi">Ondokuz Mayıs University</span>
+                    <div class="edu-meta">
+                        <span class="edu-date">2018 – 2023</span>
+                        <span class="edu-separator">•</span>
+                        <span class="edu-location" data-en="Samsun, Turkiye" data-tr="Samsun, Türkiye">Samsun, Turkiye</span>
+                        <span class="edu-separator">•</span>
+                        <span class="edu-gpa" data-en="GPA: 2.70 / 4.00" data-tr="GANO: 2.70 / 4.00">GPA: 2.70 / 4.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">07.</span>
+                <span data-en="Contact" data-tr="İletişim">Contact</span>
+                <div class="section-line"></div>
+            </h2>
+            <div class="contact-content">
+                <p class="contact-intro" data-en="I'm currently open to opportunities in <strong>embedded systems</strong>, <strong>robotics</strong>, and <strong>IoT development</strong>. Drop me a message and let's build something great together." data-tr="<strong>Gömülü sistemler</strong>, <strong>robotik</strong> ve <strong>IoT geliştirme</strong> alanlarındaki fırsatlara açığım. Bana bir mesaj bırakın, birlikte harika şeyler inşa edelim.">I'm currently open to opportunities in <strong>embedded systems</strong>, <strong>robotics</strong>, and <strong>IoT development</strong>. Drop me a message and let's build something great together.</p>
+                <div class="contact-grid">
+                    <a href="mailto:goktug.yamak@outlook.com" class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+                        </div>
+                        <span class="contact-label" data-en="Email" data-tr="E-posta">Email</span>
+                        <span class="contact-value">goktug.yamak@outlook.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/goktug-yamak" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="4" height="12"/><path d="M4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/></svg>
+                        </div>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">linkedin.com/in/goktug-yamak</span>
+                    </a>
+                    <a href="https://github.com/oihd" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-card-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        </div>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">github.com/oihd</span>
+                    </a>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3 class="form-title" data-en="Send a Message" data-tr="Mesaj Gönder">Send a Message</h3>
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xaqgdpgv" method="POST">
+                        <div class="hp-field" aria-hidden="true">
+                            <label for="website">Leave this empty</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name"><span data-en="Name" data-tr="Adınız">Name</span> <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required data-en-placeholder="Your name" data-tr-placeholder="Adınız" placeholder="Your name" minlength="2">
+                                <span class="form-error" data-en="Please enter your name" data-tr="Lütfen adınızı girin">Please enter your name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><span data-en="Email" data-tr="E-posta">Email</span> <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required data-en-placeholder="you@example.com" data-tr-placeholder="ornek@mail.com" placeholder="you@example.com">
+                                <span class="form-error" data-en="Please enter a valid email" data-tr="Geçerli bir e-posta girin">Please enter a valid email</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject"><span data-en="Subject" data-tr="Konu">Subject</span></label>
+                            <input type="text" id="subject" name="subject" data-en-placeholder="What's this about?" data-tr-placeholder="Konu nedir?" placeholder="What's this about?" minlength="3">
+                            <span class="form-error" data-en="Subject must be at least 3 characters" data-tr="Konu en az 3 karakter olmalı">Subject must be at least 3 characters</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><span data-en="Message" data-tr="Mesajınız">Message</span> <span class="required">*</span></label>
+                            <textarea id="message" name="message" rows="6" required data-en-placeholder="Your message..." data-tr-placeholder="Mesajınız..." placeholder="Your message..." minlength="10" maxlength="5000"></textarea>
+                            <span class="form-error" data-en="Message must be at least 10 characters" data-tr="Mesaj en az 10 karakter olmalı">Message must be at least 10 characters</span>
+                            <span class="form-char-count"><span id="charCount">0</span>/5000</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit-btn" id="submitBtn">
+                            <span class="btn-text" data-en="Send Message" data-tr="Mesajı Gönder">Send Message</span>
+                            <span class="btn-loading" hidden>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="spinner"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.93" y1="19.07" x2="7.76" y2="16.24"/><line x1="16.24" y1="7.76" x2="19.07" y2="4.93"/></svg>
+                                <span data-en="Sending..." data-tr="Gönderiliyor...">Sending...</span>
+                            </span>
+                        </button>
+                        <div class="form-status" id="formStatus" hidden></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text"><span data-en="Designed & Built by" data-tr="Tasarım & Geliştirme">Designed & Built by</span> <strong>Göktuğ Yamak</strong></p>
+                <p class="footer-copy">&copy; 2026 Göktuğ Yamak. <span data-en="All rights reserved." data-tr="Tüm hakları saklıdır.">All rights reserved.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
